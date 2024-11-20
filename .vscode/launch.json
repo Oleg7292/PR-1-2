@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/olegkrasulin/Desktop/учёба/Программирование/2г/PR-1-2",
+      "program": "/Users/olegkrasulin/Desktop/учёба/Программирование/2г/PR-1-2/build/Debug/outDebug"
+    }
+  ]
+}
