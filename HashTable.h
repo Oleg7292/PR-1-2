@@ -1,6 +1,7 @@
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
 
+#include <iostream>
 #include <string>
 #include <stdexcept>
 

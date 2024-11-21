@@ -3,6 +3,8 @@
 
 #include "DynamicArray.h"
 
+using namespace std;
+
 template <typename T>
 DynamicArray<T>* createArray(int initialCapacity, int expandThreshold) {
     if (initialCapacity <= 0 || expandThreshold <= 0 || expandThreshold > 100) {
@@ -42,10 +44,34 @@ void expandArray(DynamicArray<T>& arr) {
 
 template <typename T>
 void addElement(DynamicArray<T>& arr, const T& value) {
+    if (arr.data == nullptr) {
+        cerr << "Error: Array data is null. Initializing array." << endl;
+        arr.data = new T[arr.capacity];
+    }
+
     if ((arr.size + 1) * 100 / arr.capacity >= arr.expandRatio) {
         expandArray(arr);
     }
+
     arr.data[arr.size++] = value;
+}
+
+template <typename T>
+void addElementAt(DynamicArray<T>& arr, int index, const T& value) {
+    if (index < 0 || index > arr.size) {
+        throw out_of_range("Index out of range.");
+    }
+
+    if ((arr.size + 1) * 100 / arr.capacity >= arr.expandRatio) {
+        expandArray(arr);
+    }
+
+    for (int i = arr.size; i > index; --i) {
+        arr.data[i] = arr.data[i - 1];
+    }
+
+    arr.data[index] = value;
+    arr.size++;
 }
 
 template <typename T>

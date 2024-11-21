@@ -22,6 +22,9 @@ template <typename T>
 void addElement(DynamicArray<T>& arr, const T& value);
 
 template <typename T>
+void addElementAt(DynamicArray<T>& arr, int index, const T& value);
+
+template <typename T>
 void removeElement(DynamicArray<T>& arr, int index);
 
 template <typename T>

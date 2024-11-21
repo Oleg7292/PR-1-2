@@ -1,0 +1,3 @@
+/Users/olegkrasulin/Desktop/учёба/Программирование/2г/Наброски/Новая папка/Пр2/build/CMakeFiles/server.dir
+/Users/olegkrasulin/Desktop/учёба/Программирование/2г/Наброски/Новая папка/Пр2/build/CMakeFiles/edit_cache.dir
+/Users/olegkrasulin/Desktop/учёба/Программирование/2г/Наброски/Новая папка/Пр2/build/CMakeFiles/rebuild_cache.dir
